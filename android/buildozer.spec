@@ -3,7 +3,7 @@ title = 量化选股
 package.name = quantstock
 package.domain = org.quant
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,ttf
 version = 1.0.0
 requirements = python3,kivy==2.3.1,requests
 orientation = portrait
