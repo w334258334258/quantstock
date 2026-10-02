@@ -38,14 +38,14 @@ import core
 # 解决安卓上中文显示为方框（乱码）的问题
 from kivy.core.text import LabelBase
 
-_FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "simhei.ttf")
+_FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "NotoSansSC-Regular.otf")
 if os.path.exists(_FONT_PATH):
     # 注册一个支持中文的字体，并设为默认
     LabelBase.register(name="Roboto", fn_regular=_FONT_PATH)
     LabelBase.register(name="RobotoRegular", fn_regular=_FONT_PATH)
     LabelBase.register(name="DejaVuSans", fn_regular=_FONT_PATH)
 else:
-    print("警告：未找到中文字体文件 simhei.ttf")
+    print("警告：未找到中文字体文件 NotoSansSC-Regular.otf")
 
 # 颜色
 RED = (0.85, 0.33, 0.31, 1)    # 涨/买（红）
