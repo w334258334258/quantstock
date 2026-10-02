@@ -27,6 +27,12 @@ jobs:
           pip install --upgrade pip
           pip install buildozer
 
+      - name: Download Chinese font
+        working-directory: android
+        run: |
+          curl -L -o NotoSansSC-Regular.otf "https://cdn.jsdelivr.net/gh/googlefonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf"
+          ls -lh NotoSansSC-Regular.otf
+
       - name: Build APK
         working-directory: android
         run: |
